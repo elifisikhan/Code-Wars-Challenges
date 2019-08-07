@@ -22,5 +22,10 @@ namespace codewars2
             }
             return x;
         }
+	static int Add_Recursive(int x, int y)
+        {
+            if(y==0) return x;
+	    else return Add_Recursive(x^y, (x&y)<<1);
+        }
     }
 }
