@@ -25,12 +25,12 @@ namespace ConsoleApp4
         {
             if (nums.Count == 1) return nums[0];
             int sayi = 0;
-            for (int i = 1; i < 100; i++)
+            for (int i = 1;; i++)
             {
                 for (int j = 0; j < nums.Count; j++)
                 {
-                    if (i % nums[j] == 0)
-                        sayi++;
+		    if(nums[j]==0) return 0;
+                    if (i % nums[j] == 0)sayi++;
                 }
                 if (sayi == nums.Count) return i;
                 else sayi = 0;
