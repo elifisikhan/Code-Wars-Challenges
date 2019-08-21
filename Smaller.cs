@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
+
+//Write a function that takes a positive integer and returns the next smaller positive integer containing the same digits. 
+//Return -1 (for Haskell: return Nothing), when there is no smaller number that contains the same digits.Also return -1 when the next smaller number with the same digits would require the leading digit to be zero.
+//we don't write numbers with leading zeros
 [TestFixture]
 public class Tests
 {
